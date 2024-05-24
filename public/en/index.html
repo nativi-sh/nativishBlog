@@ -10,7 +10,8 @@ Processing CSS: /css/base.css
     <link rel="stylesheet" href="/css/main.css">Processing CSS: /css/app.css
     <link rel="stylesheet" href="/css/app.css">
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/menu.js"></script>
 
 
 </head>
@@ -27,7 +28,7 @@ Processing CSS: /css/base.css
         </a>
         </div>
       </div>
-      <div class="menu-icon" @click="toggleMenu">
+      <div class="menu-icon menu-toggle" @click="toggleMenu">
         
         
         <img v-show="!menuOpen" class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">

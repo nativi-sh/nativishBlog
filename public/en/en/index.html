@@ -9,7 +9,8 @@ Processing CSS: /css/base.css
     <link rel="stylesheet" href="/css/main.css">Processing CSS: /css/app.css
     <link rel="stylesheet" href="/css/app.css">
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/menu.js"></script>
 
 
 </head>
@@ -26,13 +27,11 @@ Processing CSS: /css/base.css
         </a>
         </div>
       </div>
-      <div class="menu-icon" @click="toggleMenu">
+      <div class="menu-icon menu-toggle" @click="toggleMenu">
         
         
         <img v-show="!menuOpen" class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
-        <img v-show="!menuOpen" class="light-bg" src="/menu-icon-isclosed-teal.svg" alt="Menu">
         <img v-show="menuOpen" class="dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
-        <img v-show="menuOpen" class="light-bg" src="/menu-icon-isopen-teal.svg" alt="Menu">
       </div>
       
       <nav class="desktop-nav">
@@ -44,7 +43,7 @@ Processing CSS: /css/base.css
     </nav>
     
     <nav class="mobile-nav" v-show="menuOpen">
-        <a v-if="!authStore.token && route.name === 'home'" href="https://nativi.sh/register">Try it Free</a>
+        <a href="https://nativi.sh/register">Try it Free</a>
         <a href="https://nativi.sh/login">Login</a>
         <a href="https://nativi.sh/contact">Contact Us</a>
     </nav>    
