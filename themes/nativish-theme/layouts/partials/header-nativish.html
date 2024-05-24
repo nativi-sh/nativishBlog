@@ -1,0 +1,33 @@
+<header class="homeHeader">
+    <div class="nav-wrapper">
+      <div class="logo-wrapper">
+        <div class="logo">
+          <!-- helper span so image is vertically centered in div -->
+          <span class="helper"></span>
+          <a class="dark-bg" href="https://nativi.sh/">
+            <img class="dark-bg" src="/Wordmark - dark bg - transparent.svg" alt="Nativish" />
+        </a>
+        </div>
+      </div>
+      <div class="menu-icon" @click="toggleMenu">
+        <!-- Hamburger icon only visible on mobile -->
+        <!-- <img class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu"> -->
+        <img v-show="!menuOpen" class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
+        <img v-show="menuOpen" class="dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
+      </div>
+      <!-- Desktop navigation -->
+      <nav class="desktop-nav">
+        <a href="https://nativi.sh/contact">Contact Us</a>
+        <a href="https://nativi.sh/login">Login</a>
+        <button class="button primaryOrange">
+            <a href="https://nativi.sh/register">Try it Free</a>
+        </button>
+    </nav>
+    <!-- Mobile navigation, hidden by default, shown when menu is toggled -->
+    <nav class="mobile-nav" v-show="menuOpen">
+        <a href="https://nativi.sh/register">Try it Free</a>
+        <a href="https://nativi.sh/login">Login</a>
+        <a href="https://nativi.sh/contact">Contact Us</a>
+    </nav>    
+    </div>
+  </header>
