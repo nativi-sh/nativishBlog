@@ -4,9 +4,10 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>My First Post | Nativish Blog</title>
-
-    <link rel="stylesheet" href="/css/main.css">
-
+Processing CSS: /css/base.css
+    <link rel="stylesheet" href="/css/base.css">Processing CSS: /css/main.css
+    <link rel="stylesheet" href="/css/main.css">Processing CSS: /css/app.css
+    <link rel="stylesheet" href="/css/app.css">
 
       <script src="/js/main.js"></script>
 
@@ -14,23 +15,41 @@
 </head>
 <body>
   <header>
-    <h1>Nativish Blog</h1>
-
-  <nav>
-    <ul>
-    <li>
-      <a href="/en/">Home</a>
-    </li>
-    <li>
-      <a href="/en/posts/">Posts</a>
-    </li>
-    <li>
-      <a href="/en/tags/">Tags</a>
-    </li>
-    </ul>
-  </nav>
-
-
+    <header class="homeHeader">
+    <div class="nav-wrapper">
+      <div class="logo-wrapper">
+        <div class="logo">
+          
+          <span class="helper"></span>
+          <a class="dark-bg" href="https://nativi.sh/">
+            <img class="dark-bg" src="/Wordmark - dark bg - transparent.svg" alt="Nativish" />
+        </a>
+        </div>
+      </div>
+      <div class="menu-icon" @click="toggleMenu">
+        
+        
+        <img v-show="!menuOpen" class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
+        <img v-show="!menuOpen" class="light-bg" src="/menu-icon-isclosed-teal.svg" alt="Menu">
+        <img v-show="menuOpen" class="dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
+        <img v-show="menuOpen" class="light-bg" src="/menu-icon-isopen-teal.svg" alt="Menu">
+      </div>
+      
+      <nav class="desktop-nav">
+        <a href="https://nativi.sh/contact">Contact Us</a>
+        <a href="https://nativi.sh/login">Login</a>
+        <button class="button primaryOrange">
+            <a href="https://nativi.sh/register">Try it Free</a>
+        </button>
+    </nav>
+    
+    <nav class="mobile-nav" v-show="menuOpen">
+        <a v-if="!authStore.token && route.name === 'home'" href="https://nativi.sh/register">Try it Free</a>
+        <a href="https://nativi.sh/login">Login</a>
+        <a href="https://nativi.sh/contact">Contact Us</a>
+    </nav>    
+    </div>
+  </header>
   </header>
   <main>
     

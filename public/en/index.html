@@ -5,9 +5,10 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Nativish Blog</title>
-
-    <link rel="stylesheet" href="/css/main.css">
-
+Processing CSS: /css/base.css
+    <link rel="stylesheet" href="/css/base.css">Processing CSS: /css/main.css
+    <link rel="stylesheet" href="/css/main.css">Processing CSS: /css/app.css
+    <link rel="stylesheet" href="/css/app.css">
 
       <script src="/js/main.js"></script>
 
@@ -15,44 +16,48 @@
 </head>
 <body>
   <header>
-    <h1>Nativish Blog</h1>
-
-  <nav>
-    <ul>
-    <li>
-      <a aria-current="page" class="active" href="/en/">Home</a>
-    </li>
-    <li>
-      <a href="/en/posts/">Posts</a>
-    </li>
-    <li>
-      <a href="/en/tags/">Tags</a>
-    </li>
-    </ul>
-  </nav>
-
-
+    <header class="homeHeader">
+    <div class="nav-wrapper">
+      <div class="logo-wrapper">
+        <div class="logo">
+          
+          <span class="helper"></span>
+          <a class="dark-bg" href="https://nativi.sh/">
+            <img class="dark-bg" src="/Wordmark - dark bg - transparent.svg" alt="Nativish" />
+        </a>
+        </div>
+      </div>
+      <div class="menu-icon" @click="toggleMenu">
+        
+        
+        <img v-show="!menuOpen" class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
+        <img v-show="menuOpen" class="dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
+      </div>
+      
+      <nav class="desktop-nav">
+        <a href="https://nativi.sh/contact">Contact Us</a>
+        <a href="https://nativi.sh/login">Login</a>
+        <button class="button primaryOrange">
+            <a href="https://nativi.sh/register">Try it Free</a>
+        </button>
+    </nav>
+    
+    <nav class="mobile-nav" v-show="menuOpen">
+        <a href="https://nativi.sh/register">Try it Free</a>
+        <a href="https://nativi.sh/login">Login</a>
+        <a href="https://nativi.sh/contact">Contact Us</a>
+    </nav>    
+    </div>
+  </header>
   </header>
   <main>
     
-  <p>Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
-pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim
-excepteur excepteur pariatur nostrud qui irure ullamco.</p>
+  <p>HOMEPAGE COPY
+this is our blog post introduction</p>
 
   
     <h2><a href="/en/en/posts/my-first-post/">My First Post</a></h2>
     This is the first Nativish post
-  
-    <h2><a href="/en/posts/post-3/">Post 3</a></h2>
-    Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.
-  
-    <h2><a href="/en/posts/post-2/">Post 2</a></h2>
-    Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.
-Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.
-  
-    <h2><a href="/en/posts/post-1/">Post 1</a></h2>
-    Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.
-Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.
   
 
   </main>
