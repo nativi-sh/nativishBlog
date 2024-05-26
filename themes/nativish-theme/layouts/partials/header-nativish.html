@@ -12,8 +12,8 @@
       <div class="menu-icon menu-toggle" @click="toggleMenu">
         <!-- Hamburger icon only visible on mobile -->
         <!-- <img class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu"> -->
-        <img v-show="!menuOpen" class="dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
-        <img v-show="menuOpen" class="dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
+        <img v-show="!menuOpen" class="isClosedIcon dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
+        <img v-show="menuOpen" class="isOpenIcon dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
       </div>
       <!-- Desktop navigation -->
       <nav class="desktop-nav">
@@ -24,7 +24,7 @@
         </button>
     </nav>
     <!-- Mobile navigation, hidden by default, shown when menu is toggled -->
-    <nav class="mobile-nav" v-show="menuOpen">
+    <nav class="mobile-nav">
         <a href="https://nativi.sh/register">Try it Free</a>
         <a href="https://nativi.sh/login">Login</a>
         <a href="https://nativi.sh/contact">Contact Us</a>

@@ -1,7 +1,6 @@
 {{- $styles := slice "css/base.css" "css/main.css" "css/app.css" }}
 {{- range $styles }}
   {{- with resources.Get . }}
-    {{- printf "Processing CSS: %s" .RelPermalink | safeHTML }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- end }}
 {{- end }}
