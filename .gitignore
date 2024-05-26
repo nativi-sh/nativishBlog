@@ -1,0 +1,5 @@
+# Ignore the public directory
+public/
+
+# Ignore the Hugo build lock file
+.hugo_build.lock
