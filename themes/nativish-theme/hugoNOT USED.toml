@@ -1,6 +1,14 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Nativish Blog'
+theme = "nativish-theme"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+[languages.en]
+  languageName = "English"
+  weight = 1
 
 [[menus.main]]
 name = 'Home'
