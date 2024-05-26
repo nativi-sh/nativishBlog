@@ -6,6 +6,10 @@ header {
   top: 0;
   z-index: 1000;
   background-color: var(--teal);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .homeHeader {
@@ -60,6 +64,10 @@ header.transparentHeader .dark-bg {
   vertical-align: middle;
   max-height: 45px;
   max-width: 150px;
+}
+
+.nav-placeholder {
+  height: 85px;
 }
 
 /* Nav button */

@@ -4,11 +4,14 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
+  <header class="homeHeader">
     {{ partial "header-nativish.html" . }}
   </header>
   <main>
-    {{ block "main" . }}{{ end }}
+    <div class="nav-placeholder"></div>
+    <div class="content-wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
   </main>
   <footer>
     {{ partial "footer.html" . }}
