@@ -1,0 +1,9 @@
+<div class="footer-content">
+  <p class="copyright">© {{ now.Year }} Nativish. All rights reserved.</p>
+  <div class="contact-links">
+    <span class="tooltip copy-email-button" @click="clickToCopyEmail">contact@nativi.sh
+      <span class="tooltiptext" v-if="emailRecentlyCopied">Email copied to clipboard!</span>
+    </span>
+    <a href="https://twitter.com/nativishApp" target="_blank">Twitter</a>
+  </div>
+</div>

@@ -1,0 +1,255 @@
+header {
+  line-height: 1.5;
+  max-height: 100vh;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--teal);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.homeHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.homeHeader.transparentHeader {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+
+header .light-bg {
+  display: none;
+}
+
+header .dark-bg {
+  display: block;
+}
+
+header.transparentHeader .light-bg {
+  display: block;
+}
+
+header.transparentHeader .dark-bg {
+  display: none;
+}
+
+.nav-wrapper {
+  display: flex;
+  height: 75px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1500px;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  padding: 15px 0px;
+}
+
+.logo {
+  width: 150px;
+  height: 45px;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 100%;
+  vertical-align: middle;
+  max-height: 45px;
+  max-width: 150px;
+}
+
+.nav-placeholder {
+  height: 85px;
+}
+
+/* Nav button */
+
+.button-wrapper {
+  margin-left: auto;
+  padding: 15px 0px;
+}
+
+button {
+  padding: 0.8em 1.5em;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth transition effect */
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+
+button.primaryTeal {
+  background-image: linear-gradient(to right, var(--teal), #10bfbf);
+  /* Adjust gradient colors */
+  color: white;
+}
+
+button.primaryOrange {
+  background-image: linear-gradient(to right, #ff9516, #ffac49);
+  /* Adjust gradient colors */
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  /* Lift effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for depth */
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+  height: 75px;
+  width: 100%;
+  /* line-height: 55px; */
+  /* display: inline-block; */
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--teal);
+}
+
+
+.desktop-nav a,
+.mobile-nav a,
+.desktop-nav span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.desktop-nav span {
+  padding: 0em;
+}
+
+
+.transparentHeader .desktop-nav a {
+  color: var(--title-teal);
+}
+
+.transparentHeader .desktop-nav button a {
+  color: white;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  /* text-align: center; */
+  border-top: 0.5px solid var(--darker-teal);
+  padding: 20px 5%;
+}
+
+
+.desktop-nav a:hover,
+.mobile-nav a:hover {
+  background-color: var(--darker-teal);
+}
+
+.desktop-nav a.router-link-exact-active {
+  background-color: var(--brighter-orange);
+  color: var(--text-teal);
+}
+
+.transparentHeader .desktop-nav a:hover {
+  background-color: initial;
+  transform: translateY(-0.5px);
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo a:hover {
+  background-color: initial;
+}
+
+/* .mobile-nav {
+  display: none;
+} */
+
+.isClosedIcon {
+  display: block;
+}
+
+header .dark-bg.isOpenIcon {
+  display: none;
+}
+
+@media (max-width: 599px) {
+
+  .nav-wrapper {
+    height: 65px;
+  }
+
+  .logo-wrapper {
+    padding: 10px 0px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  header .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    /* Ensures the icon itself is centered vertically */
+    justify-content: center;
+    /* Centers the icon horizontally within the div */
+    cursor: pointer;
+    /* Optional: makes it clear the icon is clickable */
+  }
+
+  .menu-icon img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 65px;
+    /* Adjusted for header height */
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+}
