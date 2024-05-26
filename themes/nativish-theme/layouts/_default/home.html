@@ -3,8 +3,12 @@
   {{ .Content }}
   <div class="recentPostsList">
     {{ range site.RegularPages }}
-      <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-      {{ .Summary }}
+      <div class="recentPost">
+        <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+        {{ .Summary }}
+        <!-- add "read more" -->
+        <a href="{{ .RelPermalink }}">Read post ></a>
+      </div>
     {{ end }}
   </div>
 {{ end }}

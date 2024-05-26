@@ -26,7 +26,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.5;
   font-weight: 600;
   /* Make the title bold */
 }
@@ -59,7 +60,7 @@ p {
 a,
 .green {
   text-decoration: none;
-  color: var(--blue);
+  color: #FF8A05;
   transition: background-color 0.3s ease;
   padding: 3px;
 }
@@ -175,7 +176,7 @@ input:focus {
 
 @media (hover: hover) {
   a:hover {
-    background-color: rgba(0, 128, 128, 0.05);
+    text-decoration: underline;
   }
 }
 
