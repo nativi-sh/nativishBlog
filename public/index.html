@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>http://localhost:1313/en/</title>
-    <link rel="canonical" href="http://localhost:1313/en/">
-    <meta name="robots" content="noindex">
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=http://localhost:1313/en/">
-  </head>
+<html lang="en" dir="ltr">
+<head>
+	<meta name="generator" content="Hugo 0.126.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Nativish Blog</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+        <script src="/js/main.js"></script>
+        <script src="/js/menu.js"></script>
+
+
+</head>
+<body>
+  <header class="homeHeader">
+    <div class="nav-wrapper">
+  <div class="logo-wrapper">
+    <div class="logo">
+      
+      <span class="helper"></span>
+      <a class="dark-bg" href="https://nativi.sh/">
+        <img class="dark-bg" src="/Wordmark - dark bg - transparent.svg" alt="Nativish" />
+    </a>
+    </div>
+  </div>
+  <div class="menu-icon menu-toggle" @click="toggleMenu">
+    
+    <img v-show="!menuOpen" class="isClosedIcon dark-bg" src="/menu-icon-isclosed-orange.svg" alt="Menu">
+    <img v-show="menuOpen" class="isOpenIcon dark-bg" src="/menu-icon-isopen-orange.svg" alt="Menu">
+  </div>
+  
+  <nav class="desktop-nav">
+    <a href="https://nativi.sh/contact">Contact Us</a>
+    <a href="https://nativi.sh/login">Login</a>
+    <button class="button primaryOrange">
+        <a href="https://nativi.sh/register">Try it Free</a>
+    </button>
+</nav>
+
+<nav class="mobile-nav">
+    <a href="https://nativi.sh/register">Try it Free</a>
+    <a href="https://nativi.sh/login">Login</a>
+    <a href="https://nativi.sh/contact">Contact Us</a>
+</nav>    
+</div>
+
+  </header>
+  <main>
+    <div class="nav-placeholder"></div>
+    <div class="content-wrapper">
+      
+  <p>HOMEPAGE COPY
+this is our blog post introduction</p>
+
+  
+    <h2><a href="/en/posts/my-first-post/">My First Post</a></h2>
+    This is the first Nativish post
+  
+
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+  <p class="copyright">© 2024 Nativish. All rights reserved.</p>
+  <div class="contact-links">
+    <span class="tooltip copy-email-button" @click="clickToCopyEmail">contact@nativi.sh
+      <span class="tooltiptext" v-if="emailRecentlyCopied">Email copied to clipboard!</span>
+    </span>
+    <a href="https://twitter.com/nativishApp" target="_blank">Twitter</a>
+  </div>
+</div>
+  </footer>
+</body>
 </html>
