@@ -1,4 +1,4 @@
-{{- $styles := slice "css/base.css" "css/main.css" "css/app.css" "css/footer.css" }}
+{{- $styles := slice "css/base.css" "css/main.css" "css/app.css" "css/footer.css" "css/home.css"}}
 {{- range $styles }}
   {{- with resources.Get . }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">

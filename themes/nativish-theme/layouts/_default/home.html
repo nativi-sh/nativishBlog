@@ -1,7 +1,14 @@
 {{ define "main" }}
+  <h1>{{ .Title }}</h1>
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+  <div class="recentPostsList">
+    {{ range site.RegularPages }}
+      <div class="recentPost">
+        <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+        {{ .Summary }}
+        <!-- add "read more" -->
+        <a class="readMore" href="{{ .RelPermalink }}">Read post ></a>
+      </div>
+    {{ end }}
+  </div>
 {{ end }}
