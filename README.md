@@ -36,6 +36,21 @@ content/
   [languages.fr.permalinks.page]
     posts = '/:slug/'
 
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+# Scheduling posts for publishing in the future
+https://discourse.gohugo.io/t/a-simple-solution-for-publishing-scheduled-posts/11842
+
+Set publishDate attribute for the post to a future date
+publishDate = 2023-10-19T00:40:04-07:00
+
+then, (automatically) run a rebuild+redeploy of the site at regular intervals.
+
+---------------------------------------------------------
+---------------------------------------------------------
+
 # Adding images to posts
 
 A post with images should be a directory instead of a single file.
@@ -48,4 +63,6 @@ en/
 
 Then can add the following tag to markdown file
 {{< figure src="Embarazado.jpeg" width="300" alt="embarrassed alt" caption="embarrassed" >}}
+
+More documentation here: https://gohugo.io/content-management/shortcodes/#figure
 
