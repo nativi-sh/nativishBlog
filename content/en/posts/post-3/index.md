@@ -20,7 +20,7 @@ Different languages have different rules for word order. In English, the standar
 ### 3. Misusing Prepositions
 Prepositions can be tricky because they don't always translate directly between languages. For example, in English, we say "interested in" something, not "interested on" or "interested about." Learn the correct prepositions for common phrases.
 
-{{< figure src="Embarazado.jpeg" width="300" alt="Gravel Calls" class="right" >}}
+{{< figure src="Embarazado.jpeg" width="300" alt="Gravel Calls" caption="embarrassed" >}}
 
 
 ### 4. Literal Translations

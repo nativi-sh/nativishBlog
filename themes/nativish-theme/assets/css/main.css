@@ -100,21 +100,17 @@ h2.targetLanguage {
 }
 
 figure {
-  margin: 10px 0;
-  padding: 0;
-}
-
-figure.center {
   text-align: center;
+  margin: 20px 0;
+  font-style: italic;
 }
 
-figure.right {
-  text-align: right;
+figcaption {
+  font-size: 0.9em;
+  color: var(--color-text);
+  margin-top: -5px;
 }
 
-figure.left {
-  text-align: left;
-}
 
 .tooltip {
   position: relative;
