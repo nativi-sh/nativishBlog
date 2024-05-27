@@ -10,6 +10,13 @@ body {
   color: var(--text-teal);
 }
 
+.content-wrapper {
+  width: 80%;
+  margin: 0px auto;
+  max-width: 600px;
+  margin-top: 50px;
+}
+
 h1,
 h2,
 h3,
@@ -19,14 +26,9 @@ h6 {
   color: var(--title-teal);
 }
 
-h1 {
-  /* margin-bottom: 20px; */
-}
-
 h2 {
   font-size: 2em;
   font-weight: 700;
-  /* Make the title bold */
 }
 
 h3 {
@@ -34,29 +36,27 @@ h3 {
   font-size: 1.3em;
   line-height: 1.5;
   font-weight: 600;
-  /* Make the title bold */
 }
 
 main {
   flex: 1;
-  /* Main content area takes remaining space */
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 p {
   max-width: 600px;
 }
 
-#app {
-  font-weight: normal;
-}
-
-a,
-.green {
+a {
   text-decoration: none;
   color: #00A3A3;
   transition: background-color 0.3s ease;
+}
+
+header a,
+footer a {
   padding: 3px;
 }
 
@@ -64,49 +64,35 @@ h3 a {
   color: var(--title-teal);
 }
 
-button.main-form {
-  padding: 8px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: var(--teal);
-  border: none;
-  border-radius: 5px;
+.recentPostsList {
+  margin-top: 40px;
+}
+
+.recentPost {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px var(--color-border);
   cursor: pointer;
-  transition: opacity 0.3s ease;
-  transition: box-shadow 0.3s ease;
-  margin: 10px 0;
 }
 
-button:hover {
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+.recentPost:last-child {
+  border-bottom: none;
 }
 
-button.main-form:hover {
-  background-color: var(--darker-teal);
+a.readMore {
+  color: 00A3A3;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-button.main-form[disabled] {
-  opacity: 0.5;
-  background-color: var(--teal);
-  color: var(--background-grey);
-  cursor: default;
-  box-shadow: none;
+.postMetaData {
+  margin-bottom: 20px;
 }
 
-input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  background-color: var(--vt-c-white-soft);
-  border: 1px solid var(--color-border);
-}
-
-input:focus {
-  outline: none;
-  border-color: var(--teal);
-  box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+time {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .tooltip {
@@ -137,64 +123,21 @@ input:focus {
   visibility: visible;
 }
 
-.main-button .tooltiptext {
-  top: -5px;
-  left: 105%;
-}
-
-.content-wrapper {
-  width: 80%;
-  margin: 0px auto;
-  max-width: 600px;
-  margin-top: 50px;
-}
-
-.options {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.form-comment {
-  margin-top: 20px;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.explanation ol {
-  font-size: 0px;
-}
-
-.explanation ol li {
-  font-size: 15px;
-}
-
-
 @media (hover: hover) {
   a:hover {
     text-decoration: underline;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    /* display: flex; */
-    /* place-items: center; */
-  }
-
-  #app {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* padding: 0 2rem; */
-  }
-}
+@media (min-width: 1024px) {}
 
 @media (max-width: 599px) {
-  input {
-    font-size: 16px;
+  h1 {
+    font-size: 1.5em;
   }
 
-  textarea {
-    font-size: 16px;
+  ul {
+    padding-inline-start: 15px;
   }
 
 }
