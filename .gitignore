@@ -3,3 +3,6 @@ public/
 
 # Ignore the Hugo build lock file
 .hugo_build.lock
+
+# Ignore the .DS_Store files
+*.DS_Store

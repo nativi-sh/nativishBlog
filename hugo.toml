@@ -32,3 +32,7 @@ paginatePath = "page"
   category = 'categories'
   target_language = 'target_languages'
   tag = 'tags'
+
+[imaging]
+  bgColor = '#ffffff'
+  quality = 100
