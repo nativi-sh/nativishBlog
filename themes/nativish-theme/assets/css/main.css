@@ -95,6 +95,10 @@ time {
   font-style: italic;
 }
 
+h2.targetLanguage {
+  font-size: 1.5em;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;

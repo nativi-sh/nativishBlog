@@ -9,3 +9,8 @@ defaultContentLanguage = "en"
 [languages.en]
   languageName = "English"
   weight = 1
+
+[taxonomies]
+  category = 'categories'
+  target_language = 'target_languages'
+  tag = 'tags'
