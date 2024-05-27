@@ -18,3 +18,13 @@ a.readMore {
   font-weight: bold;
   text-decoration: none;
 }
+
+.postMetaData {
+  margin-bottom: 20px;
+}
+
+time {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-style: italic;
+}
