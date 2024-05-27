@@ -113,7 +113,7 @@ figure img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 100%;
+  /* min-width: 100%; */
   max-width: none; /* Ensure the image can overflow */
   display: block;
 }
