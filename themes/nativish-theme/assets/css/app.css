@@ -103,7 +103,7 @@ button.primaryOrange {
 }
 
 .button:hover {
-  opacity: 0.9;
+  /* opacity: 0.9; */
   transform: translateY(-1px);
   /* Lift effect */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -164,7 +164,7 @@ button.primaryOrange {
 }
 
 
-.desktop-nav a:hover,
+.desktop-nav a:hover:not(.hover-no-bg),
 .mobile-nav a:hover {
   background-color: var(--darker-teal);
 }
