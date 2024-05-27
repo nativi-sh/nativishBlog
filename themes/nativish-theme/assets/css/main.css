@@ -99,6 +99,23 @@ h2.targetLanguage {
   font-size: 1.5em;
 }
 
+figure {
+  margin: 10px 0;
+  padding: 0;
+}
+
+figure.center {
+  text-align: center;
+}
+
+figure.right {
+  text-align: right;
+}
+
+figure.left {
+  text-align: left;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -142,6 +159,22 @@ h2.targetLanguage {
 
   ul {
     padding-inline-start: 15px;
+  }
+
+  figure {
+    max-width: 100%;
+  }
+
+  figure > img {
+    width: 100%;
+  }
+
+  figure.right {
+    text-align: center;
+  }
+  
+  figure.left {
+    text-align: center;
   }
 
 }
