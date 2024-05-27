@@ -4,6 +4,8 @@ title = 'Nativish Blog'
 theme = "nativish-theme"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+paginate = 10  
+paginatePath = "page" 
 
 
 [languages]

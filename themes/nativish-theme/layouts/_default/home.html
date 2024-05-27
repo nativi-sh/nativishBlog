@@ -2,7 +2,8 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   <div class="recentPostsList">
-    {{ range site.RegularPages }}
+    {{ $paginator := .Paginate .Site.RegularPages }}
+    {{ range $paginator.Pages }}
       <div class="recentPost">
         <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
         {{ .Summary }}
@@ -11,4 +12,5 @@
       </div>
     {{ end }}
   </div>
+  {{ template "_internal/pagination.html" . }}
 {{ end }}

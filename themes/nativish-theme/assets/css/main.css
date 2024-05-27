@@ -111,6 +111,36 @@ figcaption {
   margin-top: -5px;
 }
 
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+  font-weight: bold;
+}
+
+ul.pagination li {
+  display: inline-block;
+}
+
+ul.pagination li.disabled a { 
+  color: var(--color-text);
+  font-weight: normal;
+}
+
+ul.pagination li.disabled a:hover { 
+  text-decoration: none;
+}
+
+ul.pagination li.active a {
+  text-decoration: underline;
+}
+
+
+
+
+
 
 .tooltip {
   position: relative;
