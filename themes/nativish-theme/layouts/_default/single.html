@@ -4,6 +4,16 @@
     {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $dateHuman := .Date | time.Format ":date_long" }}
     <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    <!-- Add target language below the time -->
+    {{ with .Params.target_languages }}
+    <div class="targetLanguage">
+      Target Language:
+      {{ range $index, $element := . }}
+        {{ if $index }}, {{ end }}
+        <a href="{{ "target_languages/" | relURL }}{{ $element | urlize }}">{{ $element }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 
   {{ .Content }}

@@ -5,6 +5,7 @@ date = 2024-05-24T08:20:32-04:00
 draft = true
 description = 'A guide to common mistakes made by non-native speakers and tips on how to avoid them.'
 summary = 'Learn about common mistakes non-native speakers make and get tips on how to avoid them with Nativish.'
+target_languages = ['French', 'English']
 +++
 
 Learning a new language is challenging, and even advanced learners can make mistakes. Here are some common mistakes non-native speakers make and tips on how to avoid them.
