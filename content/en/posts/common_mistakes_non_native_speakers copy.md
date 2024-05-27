@@ -1,6 +1,7 @@
 
 +++
 title = 'Common Mistakes Non-Native Speakers Make and How to Avoid Them'
+slug = 'common-mistakes'
 date = 2024-05-24T08:20:32-04:00
 draft = true
 description = 'A guide to common mistakes made by non-native speakers and tips on how to avoid them.'
