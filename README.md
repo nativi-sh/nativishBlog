@@ -63,6 +63,8 @@ en/
 
 Then can add the following tag to markdown file
 {{< figure src="Embarazado.jpeg" width="300" alt="embarrassed" caption="embarrassed" >}}
+Use class="border" to add a border if needed
+
 
 More documentation here: https://gohugo.io/content-management/shortcodes/#figure
 
