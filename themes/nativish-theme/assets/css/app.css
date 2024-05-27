@@ -103,7 +103,6 @@ button.primaryOrange {
 }
 
 .button:hover {
-  /* opacity: 0.9; */
   transform: translateY(-1px);
   /* Lift effect */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -129,7 +128,6 @@ button.primaryOrange {
   background-color: var(--teal);
 }
 
-
 .desktop-nav a,
 .mobile-nav a,
 .desktop-nav span {
@@ -145,7 +143,6 @@ button.primaryOrange {
 .desktop-nav span {
   padding: 0em;
 }
-
 
 .transparentHeader .desktop-nav a {
   color: var(--title-teal);
@@ -188,10 +185,6 @@ button.primaryOrange {
 header .logo a:hover {
   background-color: initial;
 }
-
-/* .mobile-nav {
-  display: none;
-} */
 
 .isClosedIcon {
   display: block;
