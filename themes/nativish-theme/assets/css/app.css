@@ -239,6 +239,10 @@ header .dark-bg.isOpenIcon {
     left: 0;
     right: 0;
   }
+
+  .nav-placeholder {
+    height: 65px;
+  }
 }
 
 @media (min-width: 600px) {
