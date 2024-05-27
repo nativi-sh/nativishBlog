@@ -169,6 +169,11 @@ button.primaryOrange {
   background-color: var(--darker-teal);
 }
 
+.desktop-nav a:hover,
+.mobile-nav a:hover {
+  text-decoration: none;
+}
+
 .desktop-nav a.router-link-exact-active {
   background-color: var(--brighter-orange);
   color: var(--text-teal);
