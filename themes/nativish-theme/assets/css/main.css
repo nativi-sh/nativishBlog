@@ -20,7 +20,7 @@ main {
 .content-wrapper {
   width: 80%;
   margin: 0px auto;
-  max-width: 600px;
+  max-width: 748px;
   margin-top: 50px;
 }
 
@@ -48,7 +48,7 @@ h3 {
 }
 
 p {
-  max-width: 600px;
+  max-width: 748px;
 }
 
 a {
