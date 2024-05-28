@@ -1,0 +1,7 @@
+<div class="breadcrumbs">
+  <a href="/">Blog Home</a>&nbsp;&gt;
+  {{ with index .Params.categories 0 }}
+    <a href="{{ printf "/%s/categories/" $.Site.Language.Lang | relURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;&gt;
+  {{ end }}
+  <em>{{ .Title }}</em>
+</div>
