@@ -27,7 +27,7 @@ Faced with these challenges, we recognized the need for a tool that helps people
 
 Nativish is designed to assist anyone striving to write fluently in a second language. Whether it's for professional emails, website content, or personal messages, Nativish makes the process quicker and less stressful. Our goal is to help users write confidently and sound like native speakers. Psst, here's a secret: I used Nativish to help write this post!
 
-{{< figure src="Nativish-example.png" width="700" alt="Nativish language learning app interface" caption="Using Nativish to improve my writing for this blog post" class="border">}}
+{{< figure src="Nativish-example.png" width="700" alt="Nativish writing assistant app interface" caption="Using Nativish to improve my writing for this blog post" class="border">}}
 
 ## Try Nativish for Free
 
