@@ -4,6 +4,7 @@ date = 2024-05-27T08:20:32-04:00
 draft = true
 description = 'Discover the inspiration behind Nativish, a tool designed to help expats, professionals, and language-learners achieve native-level fluency in writing.'
 summary = 'Learn why we created Nativish to make fluent communication easier for expats and professionals working in a second language.'
+categories = ['Behind the scenes at Nativish']
 +++
 
 ## The Inspiration Behind Nativish
