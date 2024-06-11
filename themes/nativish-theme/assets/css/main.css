@@ -129,6 +129,12 @@ figure.border img {
   padding: 5px;
 }
 
+figure.border-no-padding img {
+  border: solid 1px var(--color-border);
+  border-radius: 6px;
+  padding: 0px;
+}
+
 figcaption {
   font-size: 0.9em;
   color: var(--color-text);
