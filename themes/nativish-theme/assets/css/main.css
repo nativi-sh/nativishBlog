@@ -154,10 +154,6 @@ th {
   background-color: #f2f2f2;
 }
 
-td:first-child, th:first-child {
-  font-weight: bold;
-}
-
 ul.pagination {
   display: flex;
   justify-content: center;
