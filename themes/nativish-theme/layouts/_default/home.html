@@ -6,7 +6,7 @@
     {{ range $paginator.Pages }}
       <div class="recentPost">
         <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        {{ .Summary }}
+        <p>{{ .Summary }}</p>
         <!-- add "read more" -->
         <a class="readMore" href="{{ .RelPermalink }}">Read post ></a>
       </div>
