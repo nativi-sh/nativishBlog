@@ -7,6 +7,8 @@ defaultContentLanguageInSubdir = true
 paginate = 10  
 paginatePath = "page" 
 
+[markup.goldmark.renderer]
+hardWraps = true
 
 [languages]
 [languages.en]
