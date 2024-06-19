@@ -1,9 +1,9 @@
 +++
-title = 'Why We Created Nativish: Making Fluent Communication Easier'
-date = 2024-05-27T08:20:32-04:00
-draft = true
+title = 'Why We Created Nativish: Making Fluent Writing Easier'
+date = 2024-06-19T16:20:32-04:00
+draft = false
 description = 'Discover the inspiration behind Nativish, a tool designed to help expats, professionals, and language-learners achieve native-level fluency in writing.'
-summary = 'Learn why we created Nativish to make fluent communication easier for expats and professionals working in a second language.'
+summary = 'Learn why we created Nativish to make fluent writing easier for expats and professionals working in a second language.'
 categories = ['Inside Nativish']
 +++
 
@@ -21,7 +21,7 @@ My husband, Brian, has a deep love for languages. He speaks Russian and has a pr
 
 ## The Solution: Nativish
 
-Faced with these challenges, we recognized the need for a tool that helps people attain native-level fluency in writing. So we created Nativish, a writing assistant specifically focused on the challenges of operating in a second language. The improver is geared towards issues faced by non-native speakers, such as idiomatic expressions, cultural references, and tone, which other writing assistants don't fully address. We're able to catch these kinds of issues thanks to a combination of traditional natural language processing techniques and newly available large language models.
+Faced with these challenges, we recognized the need for a tool that helps people attain native-level fluency in writing. So we created Nativish, a writing assistant specifically focused on the challenges of operating in a second language. Beyond spelling and grammar checking, Nativish is geared towards issues faced by non-native speakers, such as idiomatic expressions, cultural references, and tone, which other writing assistants don't fully address. We're able to catch these kinds of issues thanks to a combination of traditional natural language processing techniques and newly available large language models.
 
 Nativish was developed to make work and family communication easier. We made it to help ourselves initially, but hopefully it will also help other language learners, expats, and professionals who frequently need to write in a language other than their native one.
 
