@@ -4,5 +4,7 @@ date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
 
-Welcome to the Nativish blog! We help you speak and write like a native. Whether you're just starting or already advanced, our tips and examples guide you to fluency. Explore language learning with us. Overcome challenges and enjoy the beauty of speaking multiple languages. Let Nativish help you become confident in your language skills.
+Writing fluently in a second language can be really tough. Here, you’ll find tips, advice, and insights to help you along the way. We explore the quirks of spelling, grammar, and idioms, and share behind-the-scenes stories from Nativish.
+
+
 
