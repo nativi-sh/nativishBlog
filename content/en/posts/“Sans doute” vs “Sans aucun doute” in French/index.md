@@ -1,6 +1,6 @@
 +++
 title = '“Sans Doute” vs “Sans Aucun Doute” in French'
-date = 2024-06-227T08:20:32-04:00
+date = 2024-06-22T08:20:32-04:00
 draft = false
 description = 'Did you know “sans doute” means probably, not "without doubt"? Understand the difference between “sans doute” and “sans aucun doute” with clear examples, and improve your French language skills.'
 summary = 'Did you know “sans doute” means probably, not without doubt? Avoid those classic language learner slip-ups and learn how to confidently use “sans doute” and “sans aucun doute” with clear examples and insights.'
