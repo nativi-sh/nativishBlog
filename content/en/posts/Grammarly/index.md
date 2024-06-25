@@ -41,7 +41,7 @@ Grammarly is known for missing some. See the examples below.
 
 
 ### Contextual Accuracy: Nativish Understands Your Writing Better
-Understanding the context of a sentence is crucial for making relevant corrections. Most writing assistant applications, including Grammarly, ignore context, leading to suboptimal corrections. Nativish, powered by the latest language learning models, excels in this area by providing highly relevant corrections based on the context of your writing.
+Understanding the context of a sentence is crucial for making relevant corrections. Most writing assistant applications, including Grammarly, ignore context, leading to suboptimal corrections. Nativish, powered by the latest LLMs, excels in this area by providing highly relevant corrections based on the context of your writing.
 
 &nbsp;
 **Key Benefits:**
